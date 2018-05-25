@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var sum = 100;
+        do {
+            var num = prompt('请输入您要需要的服务: \n 1. 存钱 \n 2. 取钱 \n 3.查询余额 \n 4.退出');
+            if (num == '1') {
+                var num1 = parseFloat(prompt('存入金额:'));
+                sum += num1;
+                alert(sum);
+            }
+            else if (num == '2') {
+                var num2 = parseFloat(prompt('取出金额:'));
+                sum -= num2;
+                alert(sum);
+            }
+            else if (num == '3') {
+                alert(sum);
+            }
+            // else if (num == '4') break;
+        } while (num != 4);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

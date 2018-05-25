@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // - 里面现存有  100 块钱。
+        // - 如果存钱，就用 加先存的钱数
+        // - 如果取钱，就减去 取的钱数
+        // - 如果显示余额， 就打印输出余额
+        // - 退出   判断条件退出循环
+        var num = prompt('请输入您要进行的操作: \'\n\' 1.存钱 \'\n\' 2.取钱  \'\n\' 3.显示余额 \'\n\' 4.退出');
+        // alert(num);
+        switch (num) {
+            case '1':
+                var num1 = prompt('请输入您要存的钱数:');
+                alert('您卡里的余额是:' + (100 + parseInt(num1)));
+            break;
+            case '2':
+                var num2 = prompt('请输入您要取得钱数:');
+                alert('您卡里的余额是:' + (100-parseInt(num2)));
+            break;
+            case '3':
+                alert('您卡里的余额是:100');
+            break;
+            case '4':
+            break;
+            default: 
+            break;
+
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
